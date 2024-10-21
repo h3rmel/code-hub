@@ -1,0 +1,94 @@
+@import "../utilities/colors.css";
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.taskCard {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  background: var(--cod-gray-light);
+  padding: 1rem;
+  border-left: 0.25rem solid var(--cod-gray-lighter);
+  border-radius: 0.75rem;
+}
+
+.taskForm {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.taskForm > input {
+  background: var(--cod-gray);
+}
+
+.description {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.taskBtns {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  color: var(--white);
+  padding: 0.25rem 0.75rem;
+  border: 0;
+  border-radius: 0.75rem;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border-radius: 0.5rem;
+}
+
+.primary {
+  background: var(--celurean);
+}
+
+.primary:hover {
+  background: var(--celurean-dark);
+}
+
+.danger {
+  background: var(--begonia);
+}
+
+.danger:hover {
+  background: var(--begonia-dark);
+}
+
+.completed {
+  border-color: var(--celurean);
+}
+
+@media (max-width: 1200px) {
+  .taskCard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .taskForm {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .taskCard {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "errors": [
+    {
+      "code": "auth/email-already-exists",
+      "meaning": "O e-mail fornecido já esta em uso por outro usuário!"
+    },
+    {
+      "code": "auth/user-not-found",
+      "meaning": "Usuário não encontrado!"
+    },
+    {
+      "code": "auth/invalid-password",
+      "meaning": "Senha inválida!"
+    },
+    {
+      "code": "auth/invalid-email",
+      "meaning": "E-mail inválido!"
+    },
+    {
+      "code": "auth/wrong-password",
+      "meaning": "Senha incorreta!"
+    },
+    {
+      "code": "auth/internal-error",
+      "meaning": "Erro interno no servidor!"
+    }
+  ]
+}

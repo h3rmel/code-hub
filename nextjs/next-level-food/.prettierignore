@@ -1,0 +1,23 @@
+# Folders
+node_modules/
+build/
+dist/
+docs/
+
+# Files
+*.yaml
+
+# NPM Packages
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Eslint
+.eslintignore
+.eslintrc.json
+
+# Lint-staged
+.lintstagedrc.json
+
+# Commit Lint
+.commitlintrc.json

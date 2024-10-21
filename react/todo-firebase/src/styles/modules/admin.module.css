@@ -1,0 +1,26 @@
+@import "../utilities/colors.css";
+
+.logout {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: var(--white);
+  background: var(--begonia);
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 0.75rem;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background: var(--begonia-dark);
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .logout {
+    top: 1rem;
+    bottom: initial;
+  }
+}

@@ -1,0 +1,10 @@
+footer {
+  position: fixed;
+  bottom: var(--size-3);
+}
+
+@media (max-width: 37.5rem) {
+  a {
+    text-decoration: underline;
+  }
+}

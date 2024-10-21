@@ -1,0 +1,104 @@
+/* All resets of default browser styles are here */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+a {
+  background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Grotesk", sans-serif;
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  margin-bottom: 0.25rem;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: "Fira mono", monospace;
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+sub,
+sup {
+  font-size: 0.75rem;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25rem;
+}
+
+sup {
+  top: -0.5rem;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}

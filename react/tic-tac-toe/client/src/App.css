@@ -1,0 +1,120 @@
+/* App.css */
+
+.container,
+.tictactoe,
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.tictactoe {
+  flex-flow: column wrap;
+  border: var(--border-size-2) solid var(--gray-4);
+  border-radius: var(--radius-3);
+  padding: var(--size-7);
+  box-shadow: var(--shadow-2);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-2);
+  margin-block: var(--size-2);
+}
+
+.cell {
+  position: relative;
+  width: var(--size-11);
+  height: var(--size-11);
+  border: var(--border-size-2) solid var(--gray-4);
+  border-radius: var(--radius-3);
+  padding: var(--size-7);
+  font-size: var(--font-size-7);
+  overflow: hidden;
+}
+
+.cell::after {
+  background: var(--gray-0);
+  content: "";
+  height: var(--size-15);
+  left: -10rem;
+  opacity: 0.2;
+  position: absolute;
+  top: -5rem;
+  transform: rotate(35deg);
+  transition: all 0.5s var(--ease-5);
+  width: var(--size-7);
+}
+
+.cell:hover::after {
+  left: 120%;
+  transition: all 0.5s var(--ease-5);
+}
+
+.cell:active::after {
+  left: -10rem;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: var(--size-2);
+}
+
+button {
+  padding: var(--size-2) var(--size-3);
+  border-radius: var(--radius-3);
+  transition: 0.5s var(--ease-5);
+}
+
+button:hover {
+  background-color: var(--teal-9);
+  color: var(--gray-0);
+}
+
+button:hover,
+button:focus,
+button:active {
+  outline: 0;
+}
+
+.winner {
+  text-decoration: underline;
+  visibility: hidden;
+}
+
+.winner.show {
+  visibility: visible;
+}
+
+/* Responsivity */
+
+@media (max-width: 37.5rem) {
+  .cell {
+    width: var(--size-10);
+    height: var(--size-10);
+    padding: var(--size-7);
+  }
+
+  .results {
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .cell::after {
+    background: var(--gray-9);
+  }
+}

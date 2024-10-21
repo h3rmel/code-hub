@@ -1,0 +1,70 @@
+@import "../utilities/colors.css";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+
+.input {
+  width: 50%;
+  background: var(--cod-gray-light);
+  color: var(--white);
+  padding: 0.75rem 1.25rem;
+  border: 0;
+  border-radius: 0.75rem;
+  transition: 300ms;
+  resize: none;
+}
+
+.input:focus, input:focus-visible {
+  outline: 0;
+}
+
+.input:hover {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 0.125rem var(--celurean);
+}
+
+.checkbox {
+  appearance: none;
+  background: var(--cod-gray);
+  height: 1rem;
+  width: 1rem;
+  outline: none;
+  border: 0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.checkbox:checked {
+  background: var(--celurean);
+}
+
+.btn {
+  background: var(--celurean);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 0.75rem;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--celurean-darker);
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .input {
+    width: 100%;
+  }
+
+  .checkbox {
+    width: 2rem;
+  }
+}

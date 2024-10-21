@@ -1,0 +1,23 @@
+:root {
+  /* Brand */
+  --primary: #85d7fc;
+  --accent: #60baf9;
+  --dark: #15233d;
+  --dark-light: #5b6577;
+  --light: #f9f9f9;
+  /* Contextual */
+  --success: #00C6AB;
+  --danger: #E2779C;
+  --danger-light: #e892b0;
+  /* Defaults */
+  --bg: var(--dark);
+  --color: var(--light);
+  /* Widths */
+  --container: min(100% - 2rem, 75rem);
+  /* Border Radius */
+  --rounded-md: 0.5rem;
+  --rounded-lg: 0.75rem;
+  --rounded-xl: 1rem;
+  /* Shadows */
+  --shadow: 0 0 8px 16px rgba(0, 0, 0, .1);
+}

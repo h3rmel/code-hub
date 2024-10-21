@@ -1,0 +1,40 @@
+@import "../utilities/colors.css";
+
+.container {
+  width: min(100% - 2rem, 75vw);
+  margin-inline: auto;
+}
+
+.headings {
+  text-align: center;
+}
+
+.link {
+  text-align: center;
+  color: var(--picton-blue);
+  transition: 300ms;
+}
+
+.link:hover {
+  color: var(--picton-blue-dark);
+}
+
+.btns {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.divider {
+  border-color: var(--white);
+  margin-bottom: 1rem;
+  opacity: 0.10;
+}
+
+@media (max-width: 768px) {
+  .btns {
+    width: 100%;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,41 @@
+/*
+  Main CSS file with some reset CSS properties
+  
+  By Isaac Hermel on 04/2022
+*/
+
+@charset "utf-8";
+
+/* Google Fonts - Manrope (600, 800) */
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+html {
+  font-size: 16px;
+  /* For REM unit purposes */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+*:focus,
+*:hover,
+*:active {
+  outline: 0;
+}
