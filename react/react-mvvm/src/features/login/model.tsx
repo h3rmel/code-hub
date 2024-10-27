@@ -1,27 +1,19 @@
-import { ChangeEvent, FormEvent, useState } from "react";
+import { FormEvent, useRef } from "react";
 
 export function useLoginModel() {
-  const [email, setEmail] = useState<string>("");
-  const [password, setPassword] = useState<string>("");
-
-  function handleEmailChange(e: ChangeEvent<HTMLInputElement>) {
-    setEmail(e.target.value);
-  }
-
-  function handlePasswordChange(e: ChangeEvent<HTMLInputElement>) {
-    setPassword(e.target.value);
-  }
+  const emailRef = useRef<HTMLInputElement>(null);
+  const passwordRef = useRef<HTMLInputElement>(null);
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    console.log(`Email: ${email}, Senha: ${password}`);
+    console.log(
+      `Email: ${emailRef.current?.value}, Senha: ${passwordRef.current?.value}`
+    );
   }
 
   return {
-    email,
-    handleEmailChange,
-    password,
-    handlePasswordChange,
+    emailRef,
+    passwordRef,
     handleSubmit,
   };
 }

@@ -1,11 +1,9 @@
 import { useLoginModel } from "./model";
 
 export function LoginView({
-  email,
-  handleEmailChange,
-  handlePasswordChange,
+  emailRef,
+  passwordRef,
   handleSubmit,
-  password,
 }: ReturnType<typeof useLoginModel>) {
   return (
     <section className="min-h-screen w-full flex items-center justify-center bg-gray-50">
@@ -26,8 +24,7 @@ export function LoginView({
               id="email"
               name="email"
               autoComplete="email"
-              value={email}
-              onChange={handleEmailChange}
+              ref={emailRef}
               className="p-2 mt-1 block w-full border border-gray-300 shadow-sm focus:outline-none focus-visible:outline-none rounded-sm hover:border-indigo-500 duration-300"
             />
           </div>
@@ -43,8 +40,7 @@ export function LoginView({
               id="password"
               name="password"
               autoComplete="password"
-              value={password}
-              onChange={handlePasswordChange}
+              ref={passwordRef}
               className="p-2 mt-1 block w-full border border-gray-300 shadow-sm focus:outline-none focus-visible:outline-none rounded-sm hover:border-indigo-500 duration-300"
             />
           </div>
