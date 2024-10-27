@@ -17,7 +17,7 @@ export const Home = () => {
   useEffect(() => {
     returnAllCountries();
   }, []);
-
+1
   const returnAllCountries = async () => {
     try {
       const response = await getAllCountries();
