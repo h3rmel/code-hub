@@ -48,9 +48,9 @@ function initDb() {
 initDb();
 
 /**
- * 
- * @param {number} maxNumber 
- * @returns 
+ *
+ * @param {number} maxNumber
+ * @returns
  */
 export async function getPosts(maxNumber) {
   let limitClause = "";
