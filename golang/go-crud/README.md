@@ -27,4 +27,3 @@ go run cmd/api/main.go
 - `POST /contacts` - Cria um novo contato
 - `PUT /contacts/{id}` - Atualiza um contato existente
 - `DELETE /contacts/{id}` - Remove um contato
-```
