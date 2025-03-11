@@ -9,7 +9,7 @@
 
 ## Exceção - Cache expirado
 1. Sistema limpa o cache
-2. Sistema retorna erro
+2. Sistema retorna uma lista vazia
 
 ## Exceção - Cache vazio
-1. Sisteam retorna erro
+1. Sisteam retorna uma lista vazia
