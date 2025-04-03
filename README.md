@@ -23,6 +23,7 @@ This repository it's a collection of all projects that I created to study a tech
 - [next-level-food](nextjs/next-level-food)
 - [next-news](nextjs/next-news)
 - [nextjs-dashboard](nextjs/nextjs-dashboard)
+- [cash-in-hand](nextjs/cash-in-hand/)
 
 ### Nest JS
 
