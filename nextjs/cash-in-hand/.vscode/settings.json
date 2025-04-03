@@ -1,0 +1,14 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": true,
+  "explorer.fileNesting.patterns": {
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "tailwind.config.ts": "postcss*",
+    "README.md": "*.md",
+    "next.config.ts": "eslint*, .prettier*",
+    ".env": ".env*"
+  },
+  "typescript.preferences.autoImportFileExcludePatterns": ["@radix-ui/*"]
+}
