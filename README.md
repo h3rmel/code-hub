@@ -1,9 +1,5 @@
 # Code Hub
 
-![Code Hub](./assets/code-hub.png)
-
----
-
 This repository it's a collection of all projects that I created to study a technology, development pattern or something else.
 
 ## List of projects
